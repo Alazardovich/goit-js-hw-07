@@ -1,10 +1,14 @@
-const ulEl = document.querySelector('#categories');
-const itemEl = document.querySelector('.item');
-// ItemEl.forEach(el=>console.log(el.length));
-const titleEl = document.querySelectorAll('h2');
-titleEl.forEach(element=> console.log(element.textContent));
-const childUl = itemEl.lastElementChild;
+// const ulEl = document.querySelector('#categories');
 
-const childItemUl=childUl.children.length;
-console.log(childItemUl);
+const itemEl = document.querySelectorAll('.item');
+
+itemEl.forEach((element)=> 
+   console.log(
+`${element.querySelector('h2').textContent}
+ ${element.querySelectorAll('li').length}`)
+  
+);
+
+
+
 
