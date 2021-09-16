@@ -12,3 +12,13 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+// находим родителя
+const ulEl = document.querySelector('#gallery');
+// перебераем массив объектов
+images.map((image)=>{
+  
+const iteemEl = `<li class = "style-item"><img width = 150 src = ${image.url} alt = ${image.alt}></li>`;
+  
+  console.log(iteemEl);
+  ulEl.insertAdjacentHTML('afterbegin',iteemEl);
+  });
