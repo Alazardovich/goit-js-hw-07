@@ -17,7 +17,7 @@ const lengthInput = containerInput.dataset.length;
 //         focusInput.classList.remove('valid');
 //     }
 // }
-focusInput.addEventListener('blur',bluring);
+focusInput.addEventListener('blur',bluring); 
 function bluring(event){
     const text=event.currentTarget.value;
 
