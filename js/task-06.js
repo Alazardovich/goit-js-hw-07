@@ -28,6 +28,6 @@ function bluring(event){
     }
     else {
         focusInput.classList.add('invalid');
-        focusInput.classList.remove('valid');
+        // focusInput.classList.remove('valid');
     }
 }
