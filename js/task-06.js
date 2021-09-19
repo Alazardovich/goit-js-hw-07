@@ -24,10 +24,11 @@ function bluring(event){
     if (text.length==lengthInput){
         focusInput.classList.add('valid');
         focusInput.classList.remove('invalid');
-
     }
     else {
-        focusInput.classList.add('invalid');
+        focusInput.classList.toggle('invalid')
+
+        // focusInput.classList.add('invalid');
         // focusInput.classList.remove('valid');
     }
 }
